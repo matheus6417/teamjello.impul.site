@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="9px" viewBox="0 0 5 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="../../external.html?link=http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="library" transform="translate(-297.000000, -1906.000000)" fill="#0C88ED">
+            <g id="📚-books" transform="translate(0.000000, 1211.000000)">
+                <g id="book" transform="translate(200.000000, 198.000000)">
+                    <g id="content" transform="translate(0.000000, 337.000000)">
+                        <g id="more" transform="translate(0.000000, 152.000000)">
+                            <path d="M102,12.497287 C101.999753,12.2786372 101.921474,12.060493 101.765904,11.8936935 L98.3662079,8.24860415 C98.0582771,7.91844664 97.5484016,7.91521721 97.2357777,8.2504066 C96.9209742,8.58793287 96.9224011,9.12823838 97.2340966,9.46243231 L100.066056,12.4988051 L97.2340966,15.535178 C96.9261658,15.8653355 96.9231538,16.4120143 97.2357777,16.7472037 C97.5505811,17.08473 98.0545124,17.0832001 98.3662079,16.7490061 L101.765904,13.1039168 C101.919594,12.9391337 101.997326,12.720414 101.99777,12.5009721 L102,12.497287 Z" id="arrow"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -89,19 +89,7 @@
         -webkit-font-smoothing: antialiased;
       }
       
-      .removeThis-ScrollTest {
-        overflow-y: auto;
-        height: 100%;
-        width: 100%;
-        background: #17354f;
-        background: #000000;
-        background: -webkit-linear-gradient(to bottom, #17354f, #000000);
-        background: linear-gradient(to bottom, #17354f, #000000);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-      
+
       html {
         font-family: sans-serif;
         -ms-text-size-adjust: 100%;
@@ -222,13 +210,14 @@
         min-height: 15px;
         margin-right: auto;
         margin-left: auto;
-        display: flex;
-        align-items: center;
+     
       }
       
       .container.navigation-container {
         z-index: 5;
         height: 100%;
+        display: flex;
+        align-items: center;
       }
       
       .brand {
@@ -439,7 +428,7 @@
         /* float: right; */
         align-items: center;
         height: 100%;
-        display: flex;
+        /* display: flex; */
       }
       
       .mobile-demo-button {
@@ -512,7 +501,7 @@
         }
       
         .burger-menu {
-          /* display: block; */
+          display: flex;
         }
       }
       
@@ -595,3 +584,13 @@
       .language-selector-button {
         border:none;
       }
+
+
+
+
+
+
+
+
+
+      

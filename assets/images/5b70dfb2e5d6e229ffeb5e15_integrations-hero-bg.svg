@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1156px" height="561px" viewBox="0 0 1156 561" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="../../external.html?link=http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>integrations-hero-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="integrations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-253.000000, 0.000000)">
+        <g id="👋🏾-hero" transform="translate(200.000000, -457.000000)" fill="#FFFBF6">
+            <g id="hero">
+                <g id="integrations-hero" transform="translate(52.000000, 0.000000)">
+                    <path d="M508.589341,1017.17868 C558.641074,1017.17868 725.924899,985.808645 761.918206,954.604706 C933.981992,805.436203 952.982324,640.142101 1096.34501,539.490854 C1337.72631,370.023266 789.475478,0 508.589341,0 C227.703204,0 0,227.703204 0,508.589341 C0,622.571126 52.5609381,718.403295 100.824889,812.600363 C172.108083,951.724236 341.684989,1017.17868 508.589341,1017.17868 Z" id="integrations-hero-bg" transform="translate(578.098041, 508.589341) scale(-1, 1) translate(-578.098041, -508.589341) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

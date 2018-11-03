@@ -1,4 +1,5 @@
 var menu = {};
+var navbar = {};
 
 menu.init = function () {
     var $menu = $('.menu');
@@ -35,11 +36,11 @@ menu.init = function () {
 
         if (!isOpen) {
             menu.btnOpen($btn);
-            menu.open($menu);
+            menu.open($menu, $navbar);
 
         } else {
             menu.btnClose($btn);
-            menu.close($menu);
+            menu.close($menu, $navbar);
         }
     });
 };
@@ -52,7 +53,7 @@ menu.open = function ($menu, $navbar) {
 
 menu.close = function ($menu, $navbar) {
 
-    // $navbar.removeClass('is-open');
+    $navbar.removeClass('is-open');
     $menu.removeClass('is-open');
 };
 
