@@ -2,27 +2,40 @@ var menu = {};
 var navbar = {};
 
 menu.init = function () {
-
-
-
-
-
-    $(function() {
-        //toggle the background of the navbar
-        var header = $(".navigation");
-        jQuery(document.body).scroll(function() {
-            var scroll = jQuery(document.body).scrollTop();
     
-            if (scroll >= 150) {
-                header.addClass("is-sticky");
-            } else {
-                header.removeClass("is-sticky");
-            }
+    var menuAnimationController = new MotorCortex();
+    menuAnimationController.loadMSS('assets/scripts/animations.mss', function () {
+        // MotorCortex loaded and rendered the MSS files
+
+        $(function() {
+            //toggle the background of the navbar
+            var header = $(".navigation");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+        
+                if (scroll >= 150) {
+                    header.addClass("is-sticky");
+                    menuAnimationController.trigger('onScrollFromTop',function ()  {
+                        console.log('onScrollFromTop animation triggered!');
+                    });
+                } else {
+                    header.removeClass("is-sticky");
+                    menuAnimationController.trigger('onScrollToTop',function ()  {
+                        console.log('onScrollToTop animation triggered!');
+                    });
+                }
+            });
         });
+
+       
     });
+    
 
 
 
+
+
+    
 
 
     var $menu = $('.menu');
@@ -124,10 +137,3 @@ menu.btnClose = function ($btn) {
 
 menu.init();
 
-var mc = new MotorCortex();
-mc.loadMSS('assets/scripts/animations.mss', function () {
-    // here you are sure the MotorCortex loaded and rendered the MSS files
-    mc.trigger('onScroll',function ()  {
-        console.log('event animation finished!');
-    });
-});
