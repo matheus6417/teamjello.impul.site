@@ -2,6 +2,29 @@ var menu = {};
 var navbar = {};
 
 menu.init = function () {
+
+
+
+
+
+    $(function() {
+        //toggle the background of the navbar
+        var header = $(".navigation");
+        jQuery(document.body).scroll(function() {
+            var scroll = jQuery(document.body).scrollTop();
+    
+            if (scroll >= 150) {
+                header.addClass("is-sticky");
+            } else {
+                header.removeClass("is-sticky");
+            }
+        });
+    });
+
+
+
+
+
     var $menu = $('.menu');
     var $navbar = $('.navigation');
     var $btn = $('.js-btn');
@@ -11,21 +34,9 @@ menu.init = function () {
     var $line3 = $btn.find('.burger-menu-line-3');
 
 
-    // set background color to navbar after scrolling for 120px    
-    var $navbarController = new $.ScrollMagic.Controller();
-    var scene = new $.ScrollMagic.Scene({
-        offset: 120 
-    });
-
-
-    scene.setClassToggle(".navigation", "is-sticky");
-    scene.addTo($navbarController);
-
-    
 
 
 
-  
 
     // Toggle the menu
     $btn.click(function (e) {
@@ -112,3 +123,11 @@ menu.btnClose = function ($btn) {
 };
 
 menu.init();
+
+var mc = new MotorCortex();
+mc.loadMSS('assets/scripts/animations.mss', function () {
+    // here you are sure the MotorCortex loaded and rendered the MSS files
+    mc.trigger('onScroll',function ()  {
+        console.log('event animation finished!');
+    });
+});
