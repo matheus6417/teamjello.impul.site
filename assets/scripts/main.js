@@ -150,8 +150,8 @@ for (var i = 0 ; i < amount ; i++ ) {
 		'top': Math.random() * 100 + '%',
 		'left': Math.random() * 100 + '%',
 		'animation': 'blinkAfter 20s infinite ' + Math.random() * 200 + 's ease-out',
-		'width': Math.random() * 1 + 7 + 'px',
-		'height': Math.random() * 1 + 7 + 'px',
+		'width': Math.random() * 10 + 7 + 'px',
+		'height': Math.random() * 10 + 7 + 'px',
 		'opacity': Math.random() * 5 / 10 + 0.5
 		});
 	if (i % 8 === 0) {

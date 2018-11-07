@@ -74,7 +74,7 @@
 
 .section.hero.home {
   padding-top: 140px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   background: linear-gradient(180deg, #000000 0%, #0b0c29 46%, #adb8c1 91%);
 }
 
@@ -4735,7 +4735,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
   }
 
   .section.hero.home {
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
 
   .section.slight-gray {

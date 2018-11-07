@@ -1,12 +1,4 @@
-﻿*, *:after, *:before {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #000;
-    margin: 0;
-  }
-  
+﻿
   .canvas {
     overflow: hidden;
     position: absolute;
@@ -74,7 +66,7 @@
   }
   
   @-webkit-keyframes blinkAfter {
-    0% {
+    0% {  
       -webkit-transform: rotate(0deg) scale(0.08);
     }
     4% {
@@ -112,3 +104,30 @@
       }
   }
  
+  .foreground {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/assets/images/moon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section.slight-gray::before {
+  background-image: url(/assets/images/round-edge.svg);
+  content: "";
+  display: block;
+  position: relative;
+  width: calc(100% + 76px);
+  margin-left: -38px;
+  padding-bottom: 2.77%;
+  background-size: cover;
+  margin-top: 0;
+  z-index: 100;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: auto;
+  top: 0
+}
