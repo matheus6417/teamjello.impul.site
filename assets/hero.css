@@ -9,12 +9,11 @@
   }
 
   .canvas .sky {
-    height: 300vw;
-    width: 300vw;
+    height: 150%;
+    width: 150%;
     position: absolute;
-    top: -100vw;
-    left: -100vw;
-    margin-top: 40%;
+    top: 0;
+    overflow: visible;
     background-color: darkblue;
     background: -webkit-radial-gradient(center, #000046 0%, #000 60%);
     -webkit-backface-visibility: hidden;
@@ -115,7 +114,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.section.slight-gray::before {
+/* .section.slight-gray::before {
   background-image: url(/assets/images/round-edge.svg);
   content: "";
   display: block;
@@ -130,4 +129,4 @@
   position: absolute;
   bottom: auto;
   top: 0
-}
+} */
