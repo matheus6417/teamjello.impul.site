@@ -1,4 +1,4 @@
-﻿
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
     font-family: sans-serif;
@@ -101,7 +101,7 @@ html {
   }
   
   svg:not(:root) {
-    overflow: hidden
+    overflow: hidden;
   }
   
   figure {
@@ -276,11 +276,11 @@ html {
   body {
     margin: 0;
     min-height: 100%;
-    background-color: #fff;
+    background-color: #17354f;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color: #333
+    color: #333;
   }
   
   img {
@@ -449,7 +449,7 @@ html {
   h1 {
     font-size: 38px;
     line-height: 44px;
-    margin-top: 20px
+    margin-top: 20px;
   }
   
   h2 {

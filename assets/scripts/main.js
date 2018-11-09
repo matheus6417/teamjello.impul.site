@@ -141,7 +141,7 @@ menu.init();
 
 // start: stars animation
 
-var amount = 144;
+var amount = 200;
 var sky = $('.sky');
 
 for (var i = 0 ; i < amount ; i++ ) {

@@ -1,7 +1,7 @@
-﻿
+
   .canvas {
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -14,8 +14,8 @@
     position: absolute;
     top: 0;
     overflow: visible;
-    background-color: darkblue;
-    background: -webkit-radial-gradient(center, #000046 0%, #000 60%);
+    background-color: #17354f;
+    /* background: -webkit-radial-gradient(center, #000046 0%, #000 60%); */
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
   }
@@ -24,7 +24,7 @@
     position: absolute;
     width: 0.1px;
     height: 0.1px;
-    background-color: #b6cbd4;
+    background-color: #c3dae4;
     border-radius: 50%;
     z-index: 0;
     -webkit-transform: rotate(0deg) scale(0.08);
