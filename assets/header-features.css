@@ -90,9 +90,9 @@
 .hero h1,
 .hero .subhead {
   color: #fff;
-  
+
 }
-.hero h1,{
+.hero h1{
   font-weight:900;
 }
 .section.hero.library {
@@ -155,14 +155,7 @@
   background-image: linear-gradient(180deg, #f5f7fa, #fff);
 
 }
-.section-rounded{
-
-border-radius:50% 50% 0 0;
-width:200vw;
-margin-left:50%;
-transform:translateX(-50%);
-margin-top:-2vw;
-}
+.section-rounded{border-radius:50% 50% 0 0;width: 300vw;margin-left:50%;transform:translateX(-50%);margin-top:-2vw;}
 .section.slight-gray.integrations {
   overflow: hidden;
 }
