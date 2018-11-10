@@ -4,10 +4,23 @@
   top: 0px;
   right: 0px;
   z-index: 1500;
-  height: 80px;
+  height: 60px;
   padding-right: 30px;
   padding-left: 30px;
-  transition: ease-in-out 250ms;
+  transition: all 130ms ease-in;
+  /*  transform: translateY(15px);
+
+  will-change: transform; */
+
+}
+
+.navigation.is-sticky {
+  border-bottom: 1px solid rgba(223, 223, 223, 0.82);
+  background-color: rgba(256, 256, 256, 0.8);
+  box-shadow: 0 0 11px 0 rgba(70, 70, 70, 0.07);
+  transition: all 130ms ease-out;
+  /* transform: translateY(0px); */
+  /* will-change: transform; */
 }
 
 .container {
@@ -45,7 +58,6 @@
 
 .logo {
   width: 100px;
-  transition: ease-in-out 250ms;
 }
 
 .logo.bright {
@@ -57,7 +69,6 @@
   position: static;
   display: inline-block;
   filter: invert(1);
-  transition: ease-in-out 250ms;
   opacity: 0.8;
 }
 
@@ -78,7 +89,6 @@
 .menu.is-open {
   opacity: 1;
   display: block;
-  transition: opacity 250ms ease 0s;
 }
 
 .menu-item {
@@ -99,7 +109,6 @@
 .is-sticky .menu-item,
 .is-open .menu-item {
   color: #000;
-  line-height: 60px;
 }
 
 
@@ -129,7 +138,7 @@
 
 .menu-cta-button {
   display: inline-block;
-  padding: 8px 30px;
+  padding: 10px 30px;
   border: 1px solid #0e7ced;
   border-radius: 4px;
   background-color: #0e7ced;
@@ -174,8 +183,6 @@
   top: 0px;
   right: 0px;
   height: 100%;
-  border-bottom: 1px solid #dfdfdf;
-  box-shadow: 0 0 11px 0 rgba(0, 0, 0, .07);
   opacity: 0;
 }
 
@@ -204,7 +211,6 @@
   -ms-flex-align: end;
   align-items: flex-end;
   cursor: pointer;
-  transition: ease-in-out 150ms;
 }
 
 
@@ -216,8 +222,6 @@
 .is-sticky .menu-trigger>div {
   background-color: #000
 }
-
-
 
 .burger-menu-line-1 {
   width: 27px;
@@ -341,9 +345,7 @@
     font-size: 16px;
   }
 
-  .navigation {
-    height: 70px;
-  }
+
 
   .brand {
     padding-top: 0;

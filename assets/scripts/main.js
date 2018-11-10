@@ -4,28 +4,49 @@
     var navbar = {};
     var stars = {};
     navbar.init = function () {
-        console.log("uhhuuaaauu");
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 150) {
-                $(".navigation").velocity({
-                    backgroundColor: "#ffffff",
-                    backgroundColorAlpha: 0.8
-                }, {
-                    /* Velocity's default options */
-                    duration: "fast",
-                    easing: "swing",
-                    queue: "",
-                    begin: undefined,
-                    progress: undefined,
-                    complete: undefined,
-                    display: undefined,
-                    visibility: undefined,
-                    loop: false,
-                });
+                $(".navigation").addClass("is-sticky");
+
+                // $(".navigation").velocity({
+                //     backgroundColor: "#ffffff",
+                //     backgroundColorAlpha: 0.8
+                // }, {
+                //     /* Velocity's default options */
+                //     duration: "fast",
+                //     easing: "swing",
+                //     queue: "",
+                //     begin: undefined,
+                //     progress: undefined,
+                //     complete: undefined,
+                //     display: undefined,
+                //     visibility: undefined,
+                //     loop: false,
+                //     delay: 0
+
+                // });
             } else {
-                $(".navigation").velocity("reverse");
+                $(".navigation").removeClass("is-sticky");
+
+                // $(".navigation").velocity({
+                //     backgroundColorAlpha: 0
+                // }, {
+                //     /* Velocity's default options */
+                //     duration: "fast",
+                //     easing: "swing",
+                //     queue: "",
+                //     begin: undefined,
+                //     progress: undefined,
+                //     complete: undefined,
+                //     display: undefined,
+                //     visibility: undefined,
+                //     loop: false,
+                //     delay: 0
+
+                // });
+                // console.log("uhhuuaaauu");
 
             }
         });
@@ -44,11 +65,7 @@
 
         //}
         // .navigation.is - sticky {
-        //             height: 60px;
-        //             transition: ease -in -out 200ms;
-        //             border - bottom: 1px solid rgba(223, 223, 223, 0.82);
-        //             background - color: rgba(256, 256, 256, 0.8);
-        //             box - shadow: 0 0 11px 0 rgba(70, 70, 70, 0.07);
+
         //         }
 
     };
