@@ -1,119 +1,143 @@
-
-  .canvas {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .canvas .sky {
-    height: 150%;
-    width: 150%;
-    position: absolute;
-    top: 0;
-    overflow: visible;
-    background-color: #17354f;
-    /* background: -webkit-radial-gradient(center, #000046 0%, #000 60%); */
-    -webkit-backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-  }
-  
-  .star-blink {
-    position: absolute;
-    width: 0.1px;
-    height: 0.1px;
-    background-color: #c3dae4;
-    border-radius: 50%;
-    z-index: 0;
-    -webkit-transform: rotate(0deg) scale(0.08);
-    -webkit-backface-visibility: hidden;
-    -webkit-animation: blinkAfter 35s infinite ease-out;
-  }
-  .star-blink div {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    -webkit-transform: rotate(45deg) scale(0.55);
-    box-shadow: 0 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 2px 9px rgba(255, 255, 255, 0.07), 0 0 2px 15px rgba(0, 0, 0, 0.4), 0 0 2px 16px rgba(255, 255, 255, 0.1);
-    -webkit-backface-visibility: hidden;
-  }
-  .star-blink:after, .star-blink:before, .star-blink div:after, .star-blink div:before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: -350%;
-    left: 45%;
-    height: 800%;
-    width: 10%;
-    border-radius: 50%;
-    background-color: #b6cbd4;
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.1) 100%);
-    z-index: 1;
-    box-shadow: 0 0 25px white;
-    -webkit-backface-visibility: hidden;
-  }
-  .star-blink:before, .star-blink div:before {
-    -webkit-transform: rotate(90deg);
-  }
-  .star-blink.blue:after, .star-blink.blue:before, .star-blink.blue div:after, .star-blink.blue div:before {
-    box-shadow: 0 0 25px blue;
-  }
-  .star-blink.red:after, .star-blink.red:before, .star-blink.red div:after, .star-blink.red div:before {
-    box-shadow: 0 0 25px red;
-  }
-  
-  @-webkit-keyframes blinkAfter {
-    0% {  
-      -webkit-transform: rotate(0deg) scale(0.08);
-    }
-    4% {
-      -webkit-transform: rotate(-20deg) scale(0.9);
-    }
-    8% {
-      -webkit-transform: rotate(-40deg) scale(0.08);
-    }
-    50% {
-      -webkit-transform: rotate(-40deg) scale(0.08);
-    }
-    52% {
-      -webkit-transform: rotate(-50deg) scale(0.3);
-    }
-    54% {
-      -webkit-transform: rotate(-60deg) scale(0.08);
-    }
-    100% {
-      -webkit-transform: rotate(0deg) scale(0.08);
-    }
-  }
-  @-webkit-keyframes rotate {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @media screen and (max-width:1920px) {
-    .canvas .sky {
-       
-        -webkit-animation: rotate 2250s infinite linear;
-  
-      }
-  }
- 
-  .foreground {
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/assets/images/moon.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+.canvas {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+
+.canvas .sky {
+  height: 150%;
+  width: 150%;
+  position: absolute;
+  top: 0;
+  overflow: visible;
+  background-color: #17354f;
+  /* background: -webkit-radial-gradient(center, #000046 0%, #000 60%); */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+
+.star-blink {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  background-color: #c3dae4;
+  border-radius: 50%;
+  z-index: 0;
+  -webkit-transform: rotate(0deg) scale(0.08);
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: blinkAfter 35s infinite ease-out;
+}
+
+.star-blink div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transform: rotate(45deg) scale(0.55);
+  box-shadow: 0 0 2px 8px rgba(201, 170, 170, 0.4), 0 0 2px 9px rgba(255, 255, 255, 0.07), 0 0 2px 15px rgba(0, 0, 0, 0.4), 0 0 2px 16px rgba(255, 255, 255, 0.1);
+  -webkit-backface-visibility: hidden;
+}
+
+.star-blink:after,
+.star-blink:before,
+.star-blink div:after,
+.star-blink div:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -350%;
+  left: 45%;
+  height: 800%;
+  width: 10%;
+  border-radius: 50%;
+  background-color: #b6cbd4;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.1) 100%);
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.623);
+  -webkit-backface-visibility: hidden;
+}
+
+.star-blink:before,
+.star-blink div:before {
+  -webkit-transform: rotate(90deg);
+}
+
+.star-blink.blue:after,
+.star-blink.blue:before,
+.star-blink.blue div:after,
+.star-blink.blue div:before {
+  box-shadow: 0 0 20px rgba(29, 0, 192, 0.63);
+}
+
+.star-blink.red:after,
+.star-blink.red:before,
+.star-blink.red div:after,
+.star-blink.red div:before {
+  box-shadow: 0 0 20px rgba(184, 0, 0, 0.63)ded;
+}
+
+@-webkit-keyframes blinkAfter {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.08);
+  }
+
+  4% {
+    -webkit-transform: rotate(-20deg) scale(0.7);
+  }
+
+  8% {
+    -webkit-transform: rotate(-40deg) scale(0.08);
+  }
+
+  50% {
+    -webkit-transform: rotate(-40deg) scale(0.08);
+  }
+
+  52% {
+    -webkit-transform: rotate(-50deg) scale(0.3);
+  }
+
+  54% {
+    -webkit-transform: rotate(-60deg) scale(0.08);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg) scale(0.08);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width:1920px) {
+  .canvas .sky {
+
+    -webkit-animation: rotate 1250s infinite linear;
+
+  }
+}
+
+.foreground {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/images/moon.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* .section.slight-gray::before {
   background-image: url(/assets/images/round-edge.svg);
   content: "";

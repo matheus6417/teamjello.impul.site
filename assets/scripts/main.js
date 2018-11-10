@@ -1,164 +1,190 @@
-var menu = {};
-var navbar = {};
+(function () {
 
-menu.init = function () {
-    
-    var menuAnimationController = new MotorCortex();
-    menuAnimationController.loadMSS('assets/scripts/animations.mss', function () {
-        // MotorCortex loaded and rendered the MSS files
+    var menu = {};
+    var navbar = {};
+    var stars = {};
+    navbar.init = function () {
+        console.log("uhhuuaaauu");
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
 
-        $(function() {
-            //toggle the background of the navbar
-            var header = $(".navigation");
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-        
-                if (scroll >= 150) {
-                    header.addClass("is-sticky");
-                    menuAnimationController.trigger('onScrollFromTop',function ()  {
-                        console.log('onScrollFromTop animation triggered!');
-                    });
-                } else {
-                    header.removeClass("is-sticky");
-                    menuAnimationController.trigger('onScrollToTop',function ()  {
-                        console.log('onScrollToTop animation triggered!');
-                    });
-                }
+            if (scroll >= 150) {
+                $(".navigation").velocity({
+                    backgroundColor: "#ffffff",
+                    backgroundColorAlpha: 0.8
+                }, {
+                    /* Velocity's default options */
+                    duration: "fast",
+                    easing: "swing",
+                    queue: "",
+                    begin: undefined,
+                    progress: undefined,
+                    complete: undefined,
+                    display: undefined,
+                    visibility: undefined,
+                    loop: false,
+                });
+            } else {
+                $(".navigation").velocity("reverse");
+
+            }
+        });
+        //.is - sticky.menu - item,
+        // .is - open.menu - item {
+        //color: #000;
+        //line - height: 60px;
+        //}
+        // .is - sticky.logo.dark,
+        // .is - open.logo.dark {
+        //filter: none;
+
+        //}
+        // .is - sticky.menu - cta - button {
+        //padding: 4px 30px;
+
+        //}
+        // .navigation.is - sticky {
+        //             height: 60px;
+        //             transition: ease -in -out 200ms;
+        //             border - bottom: 1px solid rgba(223, 223, 223, 0.82);
+        //             background - color: rgba(256, 256, 256, 0.8);
+        //             box - shadow: 0 0 11px 0 rgba(70, 70, 70, 0.07);
+        //         }
+
+    };
+
+    stars.init = function () {
+
+
+        var amount = 200;
+        var sky = $('.sky');
+
+        for (var i = 0; i < amount; i++) {
+            var s = $('<div class="star-blink"><div></div></div>');
+            s.css({
+                'top': Math.random() * 100 + '%',
+                'left': Math.random() * 100 + '%',
+                'animation': 'blinkAfter 20s infinite ' + Math.random() * 200 + 's ease-out',
+                'width': Math.random() * 10 + 7 + 'px',
+                'height': Math.random() * 10 + 7 + 'px',
+                'opacity': Math.random() * 5 / 10 + 0.5
             });
+            if (i % 8 === 0) {
+                s.addClass('red');
+            } else if (i % 10 === 6) {
+                s.addClass('blue');
+            }
+            sky.append(s);
+        }
+    };
+
+    menu.init = function () {
+
+        var $menu = $('.menu');
+        var $navbar = $('.navigation');
+        var $btn = $('.js-btn');
+        var $lines = $btn.find('.line');
+        var $line1 = $btn.find('.burger-menu-line-1');
+        var $line2 = $btn.find('.burger-menu-line-2');
+        var $line3 = $btn.find('.burger-menu-line-3');
+
+
+
+
+
+
+        // Toggle the menu
+        $btn.click(function (e) {
+            e.preventDefault();
+
+            var self = $(this);
+            var isOpen = self.hasClass('is-open') ? true : false;
+
+            if (!isOpen) {
+                menu.btnOpen($btn);
+                menu.open($menu, $navbar);
+
+            } else {
+                menu.btnClose($btn);
+                menu.close($menu, $navbar);
+            }
         });
 
-       
-    });
-    
+        menu.open = function ($menu, $navbar) {
 
+            $menu.addClass('is-open');
+            $navbar.addClass('is-open');
+        };
 
+        menu.close = function ($menu, $navbar) {
 
+            $navbar.removeClass('is-open');
+            $menu.removeClass('is-open');
+        };
 
+        menu.btnOpen = function ($btn) {
+            var $lines = $btn.find('.line');
 
-    
+            $lines.each(function (i) {
+                var self = $(this);
 
-
-    var $menu = $('.menu');
-    var $navbar = $('.navigation');
-    var $btn = $('.js-btn');
-    var $lines = $btn.find('.line');
-    var $line1 = $btn.find('.burger-menu-line-1');
-    var $line2 = $btn.find('.burger-menu-line-2');
-    var $line3 = $btn.find('.burger-menu-line-3');
-
-
-
-
-
-
-    // Toggle the menu
-    $btn.click(function (e) {
-        e.preventDefault();
-
-        var self = $(this);
-        var isOpen = self.hasClass('is-open') ? true : false;
-
-        if (!isOpen) {
-            menu.btnOpen($btn);
-            menu.open($menu, $navbar);
-
-        } else {
-            menu.btnClose($btn);
-            menu.close($menu, $navbar);
-        }
-    });
-};
-
-menu.open = function ($menu, $navbar) {
-
-    $menu.addClass('is-open');
-    $navbar.addClass('is-open');
-};
-
-menu.close = function ($menu, $navbar) {
-
-    $navbar.removeClass('is-open');
-    $menu.removeClass('is-open');
-};
-
-menu.btnOpen = function ($btn) {
-    var $lines = $btn.find('.line');
-
-    $lines.each(function (i) {
-        var self = $(this);
-
-        self
-            .velocity({
-                marginTop: "0"
-            }, {
-                duration: 225,
-                easing: "easeOutExpo",
-                queue: false
-            })
-            .velocity({
-                rotateZ: i == 0 ? "45deg" : "-45deg"
-            }, {
-                duration: 225,
-                delay: 100,
-                easing: "easeInOutExpo",
-                queue: false
+                self
+                    .velocity({
+                        marginTop: "0"
+                    }, {
+                        duration: 225,
+                        easing: "easeOutExpo",
+                        queue: false
+                    })
+                    .velocity({
+                        rotateZ: i == 0 ? "45deg" : "-45deg"
+                    }, {
+                        duration: 225,
+                        delay: 100,
+                        easing: "easeInOutExpo",
+                        queue: false
+                    });
             });
-    });
 
-    $btn.addClass('is-open');
-};
+            $btn.addClass('is-open');
+        };
 
-menu.btnClose = function ($btn) {
-    var $lines = $btn.find('.line');
+        menu.btnClose = function ($btn) {
+            var $lines = $btn.find('.line');
 
-    $lines.each(function (i) {
-        var self = $(this);
+            $lines.each(function (i) {
+                var self = $(this);
 
-        self
-            .velocity({
-                rotateZ: "0deg"
-            }, {
-                duration: 175,
-                easing: "easeInOutExpo",
-                queue: false
-            })
-            .velocity({
-                marginTop: self.data('marginTop')
-            }, {
-                duration: 150,
-                delay: 225,
-                easing: "easeInOutSine",
-                queue: false
+                self
+                    .velocity({
+                        rotateZ: "0deg"
+                    }, {
+                        duration: 175,
+                        easing: "easeInOutExpo",
+                        queue: false
+                    })
+                    .velocity({
+                        marginTop: self.data('marginTop')
+                    }, {
+                        duration: 150,
+                        delay: 225,
+                        easing: "easeInOutSine",
+                        queue: false
+                    });
             });
+
+            $btn.removeClass('is-open');
+        };
+
+    };
+
+
+
+
+    $(document).ready(function () {
+        navbar.init();
+        menu.init();
+        stars.init();
     });
 
-    $btn.removeClass('is-open');
-};
-
-menu.init();
-
-
-
-// start: stars animation
-
-var amount = 200;
-var sky = $('.sky');
-
-for (var i = 0 ; i < amount ; i++ ) {
-	var s = $('<div class="star-blink"><div></div></div>');
-	s.css({
-		'top': Math.random() * 100 + '%',
-		'left': Math.random() * 100 + '%',
-		'animation': 'blinkAfter 20s infinite ' + Math.random() * 200 + 's ease-out',
-		'width': Math.random() * 10 + 7 + 'px',
-		'height': Math.random() * 10 + 7 + 'px',
-		'opacity': Math.random() * 5 / 10 + 0.5
-		});
-	if (i % 8 === 0) {
-		s.addClass('red');
-	} else if (i % 10 === 6) {
-		s.addClass('blue');
-	}
-	sky.append(s);
-}
-// end: stars animation
+})();
