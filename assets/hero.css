@@ -126,17 +126,6 @@
   }
 }
 
-.foreground {
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('/assets/images/moon.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 /* .section.slight-gray::before {
   background-image: url(/assets/images/round-edge.svg);
@@ -154,3 +143,44 @@
   bottom: auto;
   top: 0
 } */
+
+
+.background-elements {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.background-elements #moon {
+  background: url('/assets/images/moon.svg');
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: relative;
+  width: 100%;
+  top: 444px;
+  bottom: auto;
+}
+
+.background-elements #earth {
+  position: absolute;
+  width: 62px;
+  top: 120px;
+  right: 120px;
+  z-index: 200;
+}
+
+.background-elements #earth.luminance {
+  /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+  -webkit-filter: drop-shadow(-5px -5px 5px #afe5ff99);
+  filter: drop-shadow(0px 0px 70px #afe5ff99);
+}
+
+.background-elements #rocketbase {
+  position: absolute;
+  width: 200px;
+  top: 600px;
+  right: 200px;
+  z-index: 200;
+}
