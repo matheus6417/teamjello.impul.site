@@ -10,63 +10,12 @@
             if (scroll >= 150) {
                 $(".navigation").addClass("is-sticky");
 
-                // $(".navigation").velocity({
-                //     backgroundColor: "#ffffff",
-                //     backgroundColorAlpha: 0.8
-                // }, {
-                //     /* Velocity's default options */
-                //     duration: "fast",
-                //     easing: "swing",
-                //     queue: "",
-                //     begin: undefined,
-                //     progress: undefined,
-                //     complete: undefined,
-                //     display: undefined,
-                //     visibility: undefined,
-                //     loop: false,
-                //     delay: 0
-
-                // });
             } else {
                 $(".navigation").removeClass("is-sticky");
 
-                // $(".navigation").velocity({
-                //     backgroundColorAlpha: 0
-                // }, {
-                //     /* Velocity's default options */
-                //     duration: "fast",
-                //     easing: "swing",
-                //     queue: "",
-                //     begin: undefined,
-                //     progress: undefined,
-                //     complete: undefined,
-                //     display: undefined,
-                //     visibility: undefined,
-                //     loop: false,
-                //     delay: 0
-
-                // });
-                // console.log("uhhuuaaauu");
-
             }
         });
-        //.is - sticky.menu - item,
-        // .is - open.menu - item {
-        //color: #000;
-        //line - height: 60px;
-        //}
-        // .is - sticky.logo.dark,
-        // .is - open.logo.dark {
-        //filter: none;
 
-        //}
-        // .is - sticky.menu - cta - button {
-        //padding: 4px 30px;
-
-        //}
-        // .navigation.is - sticky {
-
-        //         }
 
     };
 
