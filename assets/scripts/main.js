@@ -2,7 +2,6 @@
 
     var menu = {};
     var navbar = {};
-    var stars = {};
     navbar.init = function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -18,31 +17,6 @@
 
 
     };
-
-    // stars.init = function () {
-
-
-    //     var amount = 200;
-    //     var sky = $('.sky');
-
-    //     for (var i = 0; i < amount; i++) {
-    //         var s = $('<div class="star-blink"><div></div></div>');
-    //         s.css({
-    //             'top': Math.random() * 100 + '%',
-    //             'left': Math.random() * 100 + '%',
-    //             'animation': 'blinkAfter 20s infinite ' + Math.random() * 200 + 's ease-out',
-    //             'width': Math.random() * 10 + 7 + 'px',
-    //             'height': Math.random() * 10 + 7 + 'px',
-    //             'opacity': Math.random() * 5 / 10 + 0.5
-    //         });
-    //         if (i % 8 === 0) {
-    //             s.addClass('red');
-    //         } else if (i % 10 === 6) {
-    //             s.addClass('blue');
-    //         }
-    //         sky.append(s);
-    //     }
-    // };
 
     menu.init = function () {
 
@@ -150,7 +124,6 @@
     $(document).ready(function () {
         navbar.init();
         menu.init();
-        stars.init();
     });
 
 })();
