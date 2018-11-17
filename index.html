@@ -10,15 +10,15 @@
 	<meta content="TeamJello url thumbnail" property="og:image">
 	<meta content="summary" name="twitter:card">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	<script src="assets/scripts/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/scripts/main.js" type="text/javascript"></script>
+	<script src="assets/scripts/stars.js" type="text/javascript"></script>
 	<link href="assets/base.css" rel="stylesheet" type="text/css">
 	<link href="assets/fonts.css" rel="stylesheet" type="text/css">
 	<link href="assets/hero.css" rel="stylesheet" type="text/css">
 	<link href="assets/navigation.css" rel="stylesheet" type="text/css">
-	<link href="assets/stars.css" rel="stylesheet" type="text/css">
 	<link href="assets/header-features.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
 	<link href="assets/images/favicon-32.png" rel="shortcut icon" type="image/x-icon">
 	<link href="assets/images/favicon-256.png" rel="apple-touch-icon">
@@ -26,8 +26,8 @@
 </head> ''
 
 <body>
-	<script> document.body.className += ' fade-out';
-</script>
+	<script> document.body.className += ' fade-out';</script>
+	<canvas id="stars"></canvas>
 	<header class="navigation">
 		<div class="container navigation-container w-clearfix"><a href="#" class="brand w-inline-block w--current"><img src="assets/images/teamjello-logo.svg"
 				 alt="Team Jello" class="logo dark"><img src="assets/images/teamjello-logo.svg" alt="Team Jello" class="logo bright"></a>
@@ -56,15 +56,19 @@
 			<div class="sky"></div>
 		</div> -->
 		<section class="section hero home">
-			<div class="background-elements">
-				<img id="moon" src="assets/images/moon.svg" alt="" srcset="">
+			<div class="hero-elements-container">
+				<img id="astronaut" src="assets/images/astronaut.svg" alt="" srcset="">
+				<img id="bot" src="assets/images/bot.svg" alt="" srcset="">
+				<img id="top-ai" src="assets/images/top-ai.svg" alt="" srcset="">
+				<img id="smile" src="assets/images/smile.svg" alt="" srcset="">
+				<img id="logo-smile" src="assets/images/teamjello-logo-white.svg" alt="" srcset="">
 				<img id="earth" src="assets/images/earth.svg" class="luminance" alt="" srcset="">
-				<!-- <img id="rocketbase" src="https://s3-us-west-2.amazonaws.com/appcues-public/microsites/product-launch-planner/img/landing/rocketbase.svg"
+			</div>
+			<!-- <img id="rocketbase" src="https://s3-us-west-2.amazonaws.com/appcues-public/microsites/product-launch-planner/img/landing/rocketbase.svg"
 				 alt="image of rocketbase" style="
 				filter: grayscale(1);
 			"> -->
-			</div>
-			<div class="container">
+			<div class="container hero-tagline">
 				<div class="row">
 					<div class="col-50 full-tablet padded-bottom home-exception">
 						<h1>Never be<br />late again.</h1>
@@ -86,18 +90,23 @@
 					</div>
 				</div>
 			</div>
-			<div style="    
-			display: block;
-			width: 100%;
-			height: 400px;">
-			</div>
 			<div class="container centered">
-				<p class="subhead subsequent">Powering hundreds of business in Asia</p><a href="#" class="cta-block social-proof w-inline-block"
-				 data-ix="card-hover">
-				</a><img src="assets/images/logos.svg" alt="Our Clients" class="clients-bar desktop" /><img src="assets/images/logos-mobile.svg"
-				 alt="Our Clients" class="clients-bar mobile" />
+				<p class="subhead subsequent">Powering hundreds of business in Asia</p>
+				<a href="#" class="cta-block social-proof w-inline-block" data-ix="card-hover">
+				</a>
+				<div class="hero-logos">
+					<img class="hero-logo" id="logo-client1" src="assets/images/1.svg" alt="" srcset="">
+					<img class="hero-logo" id="logo-client2" src="assets/images/2.svg" alt="" srcset="">
+					<img class="hero-logo" id="logo-client3" src="assets/images/3.svg" alt="" srcset="">
+					<img class="hero-logo" id="logo-client4" src="assets/images/4.svg" alt="" srcset="">
+				</div>
 			</div>
 		</section>
+		<script>
+			$(function () {
+				$('body').removeClass('fade-out');
+			});
+		</script>
 		<section class="section section-rounded slight-gray">
 			<div class="container centered"><img src="assets/images/trophy.svg" alt="Trusted" class="section-icon" />
 				<h2>Watch how Mr Jello, our A.I helps you manage your tasks</h2>
@@ -129,11 +138,6 @@
 			</div>
 		</aside>
 	</main>
-	<script>
-		$(function () {
-			$('body').removeClass('fade-out');
-		});
-	</script>
 	<link rel="stylesheet" href="assets/footer.css">
 	<footer class="footer">
 		<div class="container">

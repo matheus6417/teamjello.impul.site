@@ -4,9 +4,9 @@
   top: 0;
   right: 0;
   z-index: 1500;
-  height: 70px;
+  height: 50px;
   padding-right: 30px;
-  padding-left: 30px
+  padding-left: 30px;
 }
 
 .brand,
@@ -77,7 +77,7 @@
 .menu-item {
   height: 100%;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .menu-cta {
@@ -87,19 +87,20 @@
 }
 
 .cta-block-wrapper {
-  justify-content: center
+  position: relative;
 }
 
 .menu-cta-button {
   display: inline-block;
-  padding: 10px 30px;
-  border: 1px solid #0e7ced;
+  padding: 6px 18px;
+  border: none;
   border-radius: 4px;
   background-color: #0e7ced;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
-  text-decoration: none
+  text-decoration: none;
+  min-width: 85px;
 }
 
 .menu-cta-button:hover {
@@ -177,7 +178,6 @@
   .navigation {
     padding-right: 0;
     padding-left: 0;
-    height: 70px
   }
 
   .container.navigation-container {
@@ -362,7 +362,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 70px;
+  height: 50px;
   padding: 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -377,7 +377,7 @@
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .burger-menu-line-1 {
@@ -418,7 +418,7 @@
   }
 
   .container.navigation-container {
-    text-align: right
+    text-align: center;
   }
 
   .brand {
@@ -457,8 +457,11 @@
   }
 
   .menu-cta {
-    display: inline-block;
-    float: none
+    display: flex;
+    float: none;
+    position: relative;
+    z-index: 100;
+    align-self: flex-end;
   }
 
   .menu-trigger {
@@ -481,6 +484,12 @@
 
   .menu-item.sign-in {
     display: none
+  }
+
+  .language-selector-button {
+    height: 50px;
+    display: flex;
+    border: none;
   }
 }
 
@@ -508,7 +517,7 @@
 
 @media (max-width:479px) {
   .navigation {
-    height: 70px
+    height: 50px;
   }
 
   .button {
