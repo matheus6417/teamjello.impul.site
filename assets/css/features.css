@@ -1,12 +1,3 @@
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
 @-moz-keyframes spin {
   to {
     -moz-transform: rotate(-30deg)
@@ -100,7 +91,6 @@ canvas {
   border-bottom-color: #e1e5eb
 }
 
-.section.hero.library.library-hero,
 .section.subsequent.librarymidemail {
   padding-bottom: 0
 }
@@ -109,31 +99,6 @@ canvas {
   background-color: #f5f7fa
 }
 
-.section.hero {
-  padding-top: 120px;
-  padding-bottom: 80px
-}
-
-.section.hero.home {
-  padding-top: 0;
-  background: #17354f;
-  padding-bottom: 60px;
-  background: url(/assets/images/spaceground.svg);
-  background-position-x: center;
-  background-repeat-x: repeat;
-  background-repeat-y: no-repeat;
-  background-position-y: 400px;
-}
-
-
-.section.hero.library,
-.section.hero.pricing {
-  padding-bottom: 80px
-}
-
-.section.hero.about {
-  padding-bottom: 0
-}
 
 .section.divider-bottom {
   border-bottom: 1px solid #e1e5eb
@@ -470,16 +435,6 @@ canvas {
   color: #fff
 }
 
-.button.slack {
-  padding-left: 50px;
-  border: 2px solid #d6d6d6;
-  background-color: #fff;
-  background-image: url(https://global-uploads.webflow.com/5b5a66e9f3166b36708705fa/5b706d90b3323e0d84027c9a_slack-icon.png);
-  background-position: 15px 50%;
-  background-size: auto 24px;
-  background-repeat: no-repeat;
-  color: #222d38
-}
 
 .button.form-submit {
   display: block;
@@ -515,6 +470,10 @@ canvas {
   background-color: #000;
   box-shadow: none;
   color: #fff
+}
+
+.app-button:hover {
+  opacity: 0.74;
 }
 
 .col-33 {
@@ -1252,26 +1211,11 @@ canvas {
   margin-left: 25px
 }
 
-.multipurpose-preheader.lattice-updates {
-  color: #e76450
-}
 
 .resource-amount {
   opacity: .37
 }
 
-.resource-card-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  border: 1px solid #e4e9ee;
-  background-image: url(https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png);
-  background-position: 50% 50%;
-  background-size: cover
-}
 
 .col-66 {
   width: 66.6666%;
@@ -1540,22 +1484,6 @@ canvas {
   text-transform: uppercase
 }
 
-.step-separator-divider {
-  height: 100px;
-  max-width: 50%;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  background-image: url(https://global-uploads.webflow.com/5b5a66e9f3166b36708705fa/5b70a6b54c381971bd199393_timeline.png);
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat
-}
-
-.step-separator-divider.negative-rag-exception {
-  height: 215px;
-  margin-bottom: -56px;
-  background-image: url(https://global-uploads.webflow.com/5b5a66e9f3166b36708705fa/5b70d5d53d9b845f04721da6_timeline_large.png)
-}
 
 .step-separator-divider.negative-rag-exception.bottom {
   margin-top: -65px;
@@ -1877,21 +1805,6 @@ canvas {
   flex-wrap: wrap
 }
 
-.hero .form-row {
-  justify-content: start
-}
-
-.form-column,
-.hero .form-column {
-  width: 50%;
-  min-height: 10px;
-  padding-right: 5px;
-  padding-left: 5px
-}
-
-.hero .form-column {
-  width: 250px
-}
 
 .select-field {
   height: 50px
@@ -2637,28 +2550,7 @@ canvas {
   background-image: linear-gradient(230deg, #3b4248, #242628)
 }
 
-.client-side-subject {
-  position: relative;
-  width: 50%;
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  background-image: url(https://global-uploads.webflow.com/5b5a66e9f3166b36708705fa/5b9ae243d116e15c9fcfecf9_steph-mardell.jpg);
-  background-position: 100% 50%;
-  background-size: cover
-}
 
-.client-side-subject.rainforest {
-  background-image: url(https://global-uploads.webflow.com/5b5a66e9f3166b36708705fa/5b9ae5766b2ea12f42f9af22_heather.jpg);
-  background-position: 50% 50%
-}
-
-.client-side-subject.lynley {
-  background-image: url(https://global-uploads.webflow.com/5b5a66e9f3166b36708705fa/5b9ae681b759ef77b757fb52_lynley.jpg);
-  background-position: 50% 50%;
-  background-size: cover
-}
 
 .slider-client-logo {
   height: 30px;
@@ -3945,10 +3837,7 @@ html.w-mod-js [data-ix=new-interaction] {
     width: 600vw
   }
 
-  .section.hero {
-    padding-top: 120px;
-    padding-bottom: 80px
-  }
+
 
   .section.case-study,
   .section.full-bleed.integration-partner {
@@ -4500,14 +4389,6 @@ html.w-mod-js [data-ix=new-interaction] {
     padding: 60px 25px
   }
 
-  .section.hero,
-  .section.subsequent.trust {
-    padding-bottom: 80px
-  }
-
-  .section.hero.home {
-    padding-bottom: 0
-  }
 
   .section.slight-gray {
     padding-top: 80px
@@ -4956,14 +4837,6 @@ html.w-mod-js [data-ix=new-interaction] {
     padding-bottom: 40px
   }
 
-  .section.hero,
-  .section.subsequent.trust {
-    padding-bottom: 60px
-  }
-
-  .section.hero {
-    padding-top: 100px
-  }
 
   .section.slight-gray {
     padding-top: 50px
@@ -5539,4 +5412,15 @@ html.w-mod-js [data-ix=new-interaction] {
   .div-block-10 {
     padding-left: 0
   }
+}
+
+.divider {
+  max-width: 800px;
+  border: 0;
+  height: 1px;
+  margin: 2rem auto;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgb(221, 221, 221), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgb(221, 221, 221), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient (left, rgba(255, 255, 255, 0), rgb(221, 221, 221), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient (left, rgba(255, 255, 255, 0), rgb(221, 221, 221), rgba(255, 255, 255, 0));
 }

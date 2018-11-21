@@ -1,0 +1,220 @@
+.hero-elements-container {
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  max-width: 1600px;
+  height: 300px;
+}
+
+
+.hero #moon {
+  background: url(/assets/images/moon.svg);
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: relative;
+  width: 100%;
+  top: 444px;
+  bottom: auto
+}
+
+.hero #moon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  top: 300px
+}
+
+.hero .subhead,
+.hero h1 {
+  color: #fff
+}
+
+.hero h1 {
+  font-weight: 900;
+  letter-spacing: -5.5px;
+  font-size: 80px;
+  line-height: 75px;
+}
+
+.hero #earth {
+  position: absolute;
+  width: 80px;
+  top: 100px;
+  right: 120px;
+  z-index: 200;
+}
+
+.hero #smile {
+  position: absolute;
+  width: 232px;
+  top: 330px;
+  margin: 0 auto;
+  z-index: 200;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.hero #astronaut {
+  position: absolute;
+  width: 42px;
+  top: 351px;
+  margin: 0 auto;
+  z-index: 200;
+  margin-left: 43%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.hero #bot {
+  position: absolute;
+  width: 90px;
+  top: 404px;
+  margin: 0 auto;
+  left: auto;
+  right: 460px;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+
+.hero #top-ai {
+  position: absolute;
+  width: 116px;
+  top: 295px;
+  margin: 0 auto;
+  z-index: 200;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.hero #logo-smile {
+  position: absolute;
+  width: 260px;
+  top: 510px;
+  margin: 0 auto;
+  z-index: 200;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="2" /><feOffset dx="1" dy="2" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.33333)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.33333));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.33333));
+}
+
+.hero #earth.luminance {
+  -webkit-filter: drop-shadow(-5px -5px 5px rgba(175, 229, 255, 0.5));
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="70" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(175,229,255,0.6)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0 0 70px rgba(175, 229, 255, 0.5));
+  filter: drop-shadow(0 0 70px rgba(175, 229, 255, 0.5))
+}
+
+.hero #rocketship {
+  position: absolute;
+  width: 350px;
+  top: 300px;
+  right: 75px;
+  z-index: 200;
+  filter: drop-shadow(0 -1px 0px rgba(0, 0, 0, 0.133333));
+}
+
+.hero .rocketship-stage {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  width: 85px;
+  top: 604px;
+  right: 151px;
+  z-index: 200;
+}
+
+.rocketship-stage.smoke-2 {
+  right: 192px;
+}
+
+img.rocketship-stage.smoke-3 {
+  right: 157px;
+  z-index: 0;
+  width: 100px;
+  top: 589px;
+}
+
+.hero-tagline {
+  -webkit-transform: translateY(-120px);
+  transform: translateY(-120px);
+}
+
+.hero-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 600px;
+  max-height: 80px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.hero-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 72px;
+}
+
+#logo-client3 {
+  max-width: 160px;
+}
+
+.hero-logo #logo-client4 {}
+
+.section.hero.home {
+  padding-top: 0;
+  background: #17354f;
+  padding-bottom: 60px;
+  background: url(/assets/images/spaceground.svg);
+  background-position-x: center;
+  background-repeat-x: repeat;
+  background-repeat-y: no-repeat;
+  background-position-y: 410px;
+}
+
+
+.section.hero.about {
+  padding-bottom: 0
+}
+
+.hero .form-row {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start
+}
+
+.form-column,
+.hero .form-column {
+  width: 50%;
+  min-height: 10px;
+  padding-right: 5px;
+  padding-left: 5px
+}
+
+.hero .form-column {
+  width: 250px
+}
+
+#hero-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

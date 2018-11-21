@@ -2,6 +2,7 @@
 
     var menu = {};
     var navbar = {};
+    var stars = {};
     navbar.init = function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -14,10 +15,20 @@
 
             }
         });
-
-
     };
+    stars.init = function () {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
 
+            if (scroll >= 500) {
+                $("#hero-stars").css("position", "fixed");
+
+            } else {
+                $("#hero-stars").css("position", "absolute");
+
+            }
+        });
+    };
     menu.init = function () {
 
         var $menu = $('.menu');
@@ -124,6 +135,7 @@
     $(document).ready(function () {
         navbar.init();
         menu.init();
+        stars.init();
 
     });
 
