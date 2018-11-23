@@ -33,8 +33,8 @@
 
 .hero h1 {
   font-weight: 900;
-  letter-spacing: -5.5px;
-  font-size: 80px;
+  letter-spacing: -2.5px;
+  font-size: 79px;
   line-height: 75px;
 }
 
@@ -185,6 +185,7 @@ img.rocketship-stage.smoke-3 {
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
   background-position-y: 410px;
+  background-repeat: repeat-x;
 }
 
 
