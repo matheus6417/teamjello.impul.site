@@ -6,10 +6,10 @@
         (function () {
 
             // Configuration
-            const NB_STARS = 400;
+            const NB_STARS = 180;
             const MAX_RADIUS = 1.6;
             const GLOBAL_SPEED = 0.006;
-
+            00
             const canvas = document.getElementById('hero-stars');
             const context = canvas.getContext('2d');
             const stars = [];
@@ -75,7 +75,7 @@
             function setCanvasSize() {
                 context.save();
                 canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
+                canvas.height = 10;
                 context.restore();
             }
 

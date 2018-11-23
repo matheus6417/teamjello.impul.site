@@ -3,7 +3,7 @@
   margin: 0 auto;
   height: auto;
   max-width: 1600px;
-  height: 300px;
+  height: 473px;
 }
 
 
@@ -40,16 +40,16 @@
 
 .hero #earth {
   position: absolute;
-  width: 80px;
-  top: 100px;
-  right: 120px;
+  width: 70px;
+  top: 140px;
+  right: 179px;
   z-index: 200;
 }
 
 .hero #smile {
   position: absolute;
   width: 232px;
-  top: 330px;
+  top: 430px;
   margin: 0 auto;
   z-index: 200;
   margin-left: 50%;
@@ -60,7 +60,7 @@
 .hero #astronaut {
   position: absolute;
   width: 42px;
-  top: 351px;
+  top: 451px;
   margin: 0 auto;
   z-index: 200;
   margin-left: 43%;
@@ -70,8 +70,8 @@
 
 .hero #bot {
   position: absolute;
-  width: 90px;
-  top: 404px;
+  width: 75px;
+  top: 558px;
   margin: 0 auto;
   left: auto;
   right: 460px;
@@ -82,7 +82,7 @@
 .hero #top-ai {
   position: absolute;
   width: 116px;
-  top: 295px;
+  top: 395px;
   margin: 0 auto;
   z-index: 200;
   margin-left: 50%;
@@ -93,7 +93,7 @@
 .hero #logo-smile {
   position: absolute;
   width: 260px;
-  top: 510px;
+  top: 610px;
   margin: 0 auto;
   z-index: 200;
   margin-left: 50%;
@@ -113,9 +113,9 @@
 
 .hero #rocketship {
   position: absolute;
-  width: 350px;
-  top: 300px;
-  right: 75px;
+  width: 290px;
+  top: 325px;
+  right: 140px;
   z-index: 200;
   filter: drop-shadow(0 -1px 0px rgba(0, 0, 0, 0.133333));
 }
@@ -125,33 +125,33 @@
   width: 100%;
   bottom: 0;
   position: absolute;
-  width: 85px;
-  top: 604px;
-  right: 151px;
+  width: 70px;
+  top: 578px;
+  right: 203px;
   z-index: 200;
 }
 
 .rocketship-stage.smoke-2 {
-  right: 192px;
+  right: 239px;
 }
 
 img.rocketship-stage.smoke-3 {
-  right: 157px;
+  right: 209px;
   z-index: 0;
-  width: 100px;
-  top: 589px;
+  width: 78px;
+  top: 566px;
 }
 
 .hero-tagline {
-  -webkit-transform: translateY(-120px);
-  transform: translateY(-120px);
+  -webkit-transform: translateY(-345px);
+  transform: translateY(-345px);
 }
 
 .hero-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80px;
+  height: 70px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -167,7 +167,7 @@ img.rocketship-stage.smoke-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 72px;
+  max-width: 65px;
 }
 
 #logo-client3 {
@@ -184,7 +184,7 @@ img.rocketship-stage.smoke-3 {
   background-position-x: center;
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
-  background-position-y: 410px;
+  background-position-y: 540px;
   background-repeat: repeat-x;
 }
 
@@ -216,6 +216,80 @@ img.rocketship-stage.smoke-3 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: -1;
+}
+
+@media (max-width:1281px) {
+  .hero #smile {
+    position: absolute;
+    width: 210px;
+    top: 457px;
+    margin: 0 auto;
+    z-index: 200;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  /* adapt hero illustrations */
+  .hero #rocketship {
+    position: absolute;
+    width: 289px;
+    top: 329px;
+    right: 19px;
+    z-index: 200;
+    filter: drop-shadow(0 -1px 0px rgba(0, 0, 0, 0.133333));
+  }
+
+  .hero #earth {
+    position: absolute;
+    width: 60px;
+    top: 105px;
+    right: 97px;
+    z-index: 200;
+  }
+
+  .hero #top-ai {
+    position: absolute;
+    width: 110px;
+    top: 417px;
+    margin: 0 auto;
+    z-index: 200;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .hero .rocketship-stage {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    width: 70px;
+    top: 578px;
+    right: 203px;
+    z-index: 200;
+  }
+
+  .hero .rocketship-stage {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    width: 58px;
+    top: 582px;
+    right: 87px;
+    z-index: 200;
+  }
+
+  .rocketship-stage.smoke-2 {
+    right: 120px;
+  }
+
+  img.rocketship-stage.smoke-3 {
+    right: 89px;
+    z-index: 0;
+    width: 78px;
+    top: 566px;
+  }
 }

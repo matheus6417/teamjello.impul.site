@@ -365,9 +365,9 @@
 .subhead {
   margin-bottom: 25px;
   color: #46586b;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 29px;
-  letter-spacing: 0
+  letter-spacing: 0;
 }
 
 .subhead.limited {

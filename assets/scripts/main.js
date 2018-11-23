@@ -22,10 +22,14 @@
 
             if (scroll >= 500) {
                 $("#hero-stars").css("position", "fixed");
+                $("#hero-stars").css("top", "auto");
+                $("#hero-stars").css("bottom", "0");
 
             } else {
                 $("#hero-stars").css("position", "absolute");
 
+                $("#hero-stars").css("top", "0");
+                $("#hero-stars").css("bottom", "auto");
             }
         });
     };
