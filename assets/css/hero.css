@@ -58,7 +58,7 @@
   text-align: center;
   background: url(/assets/images/smile.svg);
   background-size: contain;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   background-repeat: no-repeat;
 }
 
