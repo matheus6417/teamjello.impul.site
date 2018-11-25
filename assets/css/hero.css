@@ -96,8 +96,9 @@
 }
 
 img.js-lookAtMouse {
-  width: 90%;
+  width: 206px;
   margin: 0 auto;
+  margin-top: 5px;
   text-align: center;
 }
 
