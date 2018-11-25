@@ -32,18 +32,6 @@
   width: 100px
 }
 
-.logo.bright,
-.logo.dark {
-  display: none;
-  filter: invert(1)
-}
-
-.logo.dark {
-  position: static;
-  display: inline-block;
-  opacity: .8
-}
-
 .menu {
   height: 100%;
   display: flex;

@@ -13,20 +13,13 @@
     justify-content: center;
 }
 
-.brand:hover {
-    opacity: .76
-}
 
-.logo.bright,
-.logo.dark {
-    display: none;
-    filter: invert(1)
-}
 
-.logo.dark {
+
+.footer .logo.dark {
     position: static;
     display: inline-block;
-    opacity: .8
+    opacity: 1
 }
 
 
