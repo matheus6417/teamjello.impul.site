@@ -3,6 +3,7 @@
     var menu = {};
     var navbar = {};
     var stars = {};
+    var smileface = {};
     navbar.init = function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -31,6 +32,28 @@
                 $("#hero-stars").css("top", "0");
                 $("#hero-stars").css("bottom", "auto");
             }
+        });
+    };
+    smileface.init = function () {
+        "use strict";
+
+        var node = document.getElementsByClassName("js-lookAtMouse");
+        var box = node[0];
+        var scale = 1;
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+
+        var xRatio = void 0,
+            yRatio = void 0,
+            xNormalize = void 0,
+            yNormalize = void 0;
+
+        document.addEventListener("mousemove", function (e) {
+            xRatio = e.clientX / w - .5;
+            yRatio = e.clientY / h - .5;
+            xNormalize = 45 * xRatio;
+            yNormalize = -45 * yRatio;
+            box.style.transform = "perspective(900px) rotateX(" + yNormalize + "deg) rotateY(" + xNormalize + "deg) translateZ(64px)";
         });
     };
     menu.init = function () {
@@ -140,6 +163,7 @@
         navbar.init();
         menu.init();
         stars.init();
+        smileface.init();
 
     });
 

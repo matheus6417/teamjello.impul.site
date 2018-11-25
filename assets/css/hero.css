@@ -4,6 +4,7 @@
   height: auto;
   max-width: 1600px;
   height: 260px;
+  display: flex;
 }
 
 
@@ -47,14 +48,18 @@
 }
 
 .hero #smile {
-  position: absolute;
-  width: 232px;
+  position: relative;
+  width: 227px;
+  height: auto;
   top: 330px;
   margin: 0 auto;
+  background: #fcc21b;
   z-index: 200;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
+  text-align: center;
+  background: url(/assets/images/smile.svg);
+  background-size: contain;
   transform: translateX(-50%);
+  background-repeat: no-repeat;
 }
 
 .hero #astronaut {
@@ -89,6 +94,13 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
+img.js-lookAtMouse {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 .hero #logo-smile {
   position: absolute;
@@ -255,99 +267,3 @@ img.rocketship-stage.smoke-3 {
     right: 240px;
   }
 }
-
-/* @media (max-width:1281px) {
-  .hero #smile {
-    position: absolute;
-    width: 185px;
-    top: 476px;
-    margin: 0 auto;
-    z-index: 200;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-
-.hero #rocketship {
-  position: absolute;
-  width: 230px;
-  top: 410px;
-  right: 19px;
-  z-index: 200;
-  filter: drop-shadow(0 -1px 0px rgba(0, 0, 0, 0.133333));
-}
-
-.hero #earth {
-  position: absolute;
-  width: 60px;
-  top: 106px;
-  right: 80px;
-  z-index: 200;
-}
-
-.hero #top-ai {
-  position: absolute;
-  width: 95px;
-  top: 445px;
-  margin: 0 auto;
-  z-index: 200;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.hero .rocketship-stage {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-  width: 70px;
-  top: 578px;
-  right: 203px;
-  z-index: 200;
-}
-
-.hero .rocketship-stage {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-  width: 53px;
-  top: 609px;
-  right: 66px;
-  z-index: 200;
-}
-
-.rocketship-stage.smoke-2 {
-  right: 98px;
-}
-
-img.rocketship-stage.smoke-3 {
-  right: 75px;
-  z-index: 0;
-  width: 63px;
-  top: 600px;
-}
-
-.hero #bot {
-  right: 240px;
-  width: 60px;
-  top: 565px;
-}
-
-
-.hero #logo-smile {
-  top: 623px;
-  width: 195px;
-}
-
-.hero #astronaut {
-
-  top: 488px;
-
-  margin-left: calc(50% - 88px);
-
-}
-}
-
-*/
