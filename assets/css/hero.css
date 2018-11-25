@@ -3,7 +3,7 @@
   margin: 0 auto;
   height: auto;
   max-width: 1600px;
-  height: 473px;
+  height: 260px;
 }
 
 
@@ -34,22 +34,22 @@
 .hero h1 {
   font-weight: 900;
   letter-spacing: -2.5px;
-  font-size: 79px;
-  line-height: 75px;
+  font-size: 68px;
+  line-height: 65px;
 }
 
 .hero #earth {
   position: absolute;
-  width: 70px;
+  width: 55px;
   top: 140px;
-  right: 179px;
+  right: 113px;
   z-index: 200;
 }
 
 .hero #smile {
   position: absolute;
   width: 232px;
-  top: 430px;
+  top: 330px;
   margin: 0 auto;
   z-index: 200;
   margin-left: 50%;
@@ -60,21 +60,21 @@
 .hero #astronaut {
   position: absolute;
   width: 42px;
-  top: 451px;
+  top: 378px;
   margin: 0 auto;
   z-index: 200;
-  margin-left: 43%;
+  margin-left: calc(50% - 120px);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .hero #bot {
   position: absolute;
-  width: 75px;
-  top: 558px;
+  width: 60px;
+  top: 420px;
   margin: 0 auto;
   left: auto;
-  right: 460px;
+  right: 350px;
   -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
 }
@@ -82,7 +82,7 @@
 .hero #top-ai {
   position: absolute;
   width: 116px;
-  top: 395px;
+  top: 295px;
   margin: 0 auto;
   z-index: 200;
   margin-left: 50%;
@@ -92,8 +92,8 @@
 
 .hero #logo-smile {
   position: absolute;
-  width: 260px;
-  top: 610px;
+  width: 229px;
+  top: 510px;
   margin: 0 auto;
   z-index: 200;
   margin-left: 50%;
@@ -113,9 +113,9 @@
 
 .hero #rocketship {
   position: absolute;
-  width: 290px;
-  top: 325px;
-  right: 140px;
+  width: 220px;
+  top: 307px;
+  right: 70px;
   z-index: 200;
   filter: drop-shadow(0 -1px 0px rgba(0, 0, 0, 0.133333));
 }
@@ -125,26 +125,26 @@
   width: 100%;
   bottom: 0;
   position: absolute;
-  width: 70px;
-  top: 578px;
-  right: 203px;
+  width: 49px;
+  top: 499px;
+  right: 116px;
   z-index: 200;
 }
 
 .rocketship-stage.smoke-2 {
-  right: 239px;
+  right: 147px;
 }
 
 img.rocketship-stage.smoke-3 {
-  right: 209px;
+  right: 125px;
   z-index: 0;
-  width: 78px;
-  top: 566px;
+  width: 65px;
+  top: 488px;
 }
 
 .hero-tagline {
-  -webkit-transform: translateY(-345px);
-  transform: translateY(-345px);
+  -webkit-transform: translateY(-195px);
+  transform: translateY(-195px);
 }
 
 .hero-logos {
@@ -155,7 +155,7 @@ img.rocketship-stage.smoke-3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 600px;
+  width: 460px;
   max-height: 80px;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -167,11 +167,15 @@ img.rocketship-stage.smoke-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 65px;
+  max-width: 48px;
 }
 
 #logo-client3 {
-  max-width: 160px;
+  max-width: 139px;
+}
+
+#logo-client4 {
+  max-width: 80px;
 }
 
 .hero-logo #logo-client4 {}
@@ -184,8 +188,9 @@ img.rocketship-stage.smoke-3 {
   background-position-x: center;
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
-  background-position-y: 540px;
+  background-position-y: 434px;
   background-repeat: repeat-x;
+  background-size: 1000px;
 }
 
 
@@ -208,7 +213,7 @@ img.rocketship-stage.smoke-3 {
 }
 
 .hero .form-column {
-  width: 250px
+  width: 50%;
 }
 
 #hero-stars {
@@ -219,77 +224,130 @@ img.rocketship-stage.smoke-3 {
   z-index: -1;
 }
 
+.hero-tagline-container {
+  width: 550px !important;
+}
+
 @media (max-width:1281px) {
-  .hero #smile {
-    position: absolute;
-    width: 210px;
-    top: 457px;
-    margin: 0 auto;
-    z-index: 200;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-
-  /* adapt hero illustrations */
   .hero #rocketship {
-    position: absolute;
-    width: 289px;
-    top: 329px;
-    right: 19px;
-    z-index: 200;
-    filter: drop-shadow(0 -1px 0px rgba(0, 0, 0, 0.133333));
-  }
-
-  .hero #earth {
-    position: absolute;
-    width: 60px;
-    top: 105px;
-    right: 97px;
-    z-index: 200;
-  }
-
-  .hero #top-ai {
-    position: absolute;
-    width: 110px;
-    top: 417px;
-    margin: 0 auto;
-    z-index: 200;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    right: 20px;
   }
 
   .hero .rocketship-stage {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    width: 70px;
-    top: 578px;
-    right: 203px;
-    z-index: 200;
-  }
 
-  .hero .rocketship-stage {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    width: 58px;
-    top: 582px;
-    right: 87px;
-    z-index: 200;
+    right: 66px;
   }
 
   .rocketship-stage.smoke-2 {
-    right: 120px;
+    right: 97px;
   }
 
   img.rocketship-stage.smoke-3 {
-    right: 89px;
-    z-index: 0;
-    width: 78px;
-    top: 566px;
+    right: 75px;
+
+  }
+
+  .hero-tagline-container {
+    width: 400px !important;
+  }
+
+  .hero #bot {
+    right: 240px;
   }
 }
+
+/* @media (max-width:1281px) {
+  .hero #smile {
+    position: absolute;
+    width: 185px;
+    top: 476px;
+    margin: 0 auto;
+    z-index: 200;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+.hero #rocketship {
+  position: absolute;
+  width: 230px;
+  top: 410px;
+  right: 19px;
+  z-index: 200;
+  filter: drop-shadow(0 -1px 0px rgba(0, 0, 0, 0.133333));
+}
+
+.hero #earth {
+  position: absolute;
+  width: 60px;
+  top: 106px;
+  right: 80px;
+  z-index: 200;
+}
+
+.hero #top-ai {
+  position: absolute;
+  width: 95px;
+  top: 445px;
+  margin: 0 auto;
+  z-index: 200;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.hero .rocketship-stage {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  width: 70px;
+  top: 578px;
+  right: 203px;
+  z-index: 200;
+}
+
+.hero .rocketship-stage {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  width: 53px;
+  top: 609px;
+  right: 66px;
+  z-index: 200;
+}
+
+.rocketship-stage.smoke-2 {
+  right: 98px;
+}
+
+img.rocketship-stage.smoke-3 {
+  right: 75px;
+  z-index: 0;
+  width: 63px;
+  top: 600px;
+}
+
+.hero #bot {
+  right: 240px;
+  width: 60px;
+  top: 565px;
+}
+
+
+.hero #logo-smile {
+  top: 623px;
+  width: 195px;
+}
+
+.hero #astronaut {
+
+  top: 488px;
+
+  margin-left: calc(50% - 88px);
+
+}
+}
+
+*/

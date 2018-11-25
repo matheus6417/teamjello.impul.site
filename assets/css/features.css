@@ -343,18 +343,14 @@
   padding-left: 0
 }
 
-.col-50.full-tablet.padded-bottom.home-exception {
-  width: 60%
-}
 
 .col-50.full-tablet.home-exception {
   position: relative;
-  width: 40%;
   padding-right: 16px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  flex: 0 0 auto
+  flex: 0 0 auto;
 }
 
 .col-50.agency {

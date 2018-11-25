@@ -480,18 +480,7 @@ p {
     padding-left: 15px;
 }
 
-.col-50.full-tablet.padded-bottom.home-exception {
-    width: 60%;
-}
 
-.col-50.full-tablet.home-exception {
-    position: relative;
-    width: 40%;
-    padding-right: 16px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-}
 
 .subhead {
     margin-bottom: 25px;
