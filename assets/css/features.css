@@ -470,6 +470,8 @@
   color: #fff
 }
 
+
+
 .app-button:hover {
   opacity: 0.74;
 }
@@ -5415,4 +5417,84 @@ html.w-mod-js [data-ix=new-interaction] {
   background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgb(221, 221, 221), rgba(255, 255, 255, 0));
   background-image: -ms-linear-gradient (left, rgba(255, 255, 255, 0), rgb(221, 221, 221), rgba(255, 255, 255, 0));
   background-image: -o-linear-gradient (left, rgba(255, 255, 255, 0), rgb(221, 221, 221), rgba(255, 255, 255, 0));
+}
+
+.section-chat {
+  text-align: center
+}
+
+.device-container {
+  position: relative;
+  display: inline-block;
+  width: 248px;
+  height: 500px;
+  margin-right: -9px;
+  background-image: url("/assets/images/phone-display.png");
+  background-position: 50% 0px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.device-screen {
+  position: absolute;
+  left: 16px;
+  top: 59px;
+  overflow: hidden;
+  width: 217px;
+  height: 383px;
+  background-color: #2b3a44;
+  background-image: url("");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  .device-container {
+    width: 204px;
+    height: 410px;
+    margin-right: 0px;
+  }
+
+  .device-screen {
+    left: 14px;
+    top: 49px;
+    width: 176px;
+    height: 313px;
+  }
+}
+
+@media (max-width: 767px) {
+  .device-container {
+    display: block;
+    width: 274px;
+    height: 550px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .device-screen {
+    left: 19px;
+    top: 65px;
+    width: 237px;
+    height: 421px;
+  }
+}
+
+@media (max-width: 479px) {
+  .device-container {
+    width: 250px;
+    height: 500px;
+  }
+
+  .device-screen {
+    left: 17px;
+    top: 59px;
+    width: 217px;
+    height: 383px;
+  }
+}
+
+.device-video {
+  width: 102%;
+  margin-left: -1%;
 }

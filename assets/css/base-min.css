@@ -1351,6 +1351,10 @@ p {
     }
 }
 
+.align-center {
+    text-align: center
+}
+
 .logo.bright,
 .logo.dark {
     display: none;
